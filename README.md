@@ -16,15 +16,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Denizay Ogmen 
+  Denizay Ogmen
 
   #### Je startniveau:
-  Blauw 
   (kies uit zwart, rood óf blauw)
+  Blauw
 
   #### Je focus:
-  Responsive 
   (kies uit responsive óf surface plane)
+  Responsive
  
 </details>
 
@@ -39,15 +39,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+
   https://themovies.nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Home/landingspagina 
+  <img src="readme-images/Home.jpeg" width="375px" alt="de home pagina van the movies">
+  <img src="readme-images/HomeMissendeAfbeelding.jpeg" width="375px" alt="De afbeelding bovenaan de website wou de screenshot niet meenemen">
+  <img src="readme-images/HomeEnCinevilleMissendeAfbeelding.jpeg" width="375px" alt="Hetzelfde geldt voor de afbeeldingen in de caroussen onderaan">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/Cineville.jpeg" width="375px" alt="onbeperkt naar de film, Cinevill pase">
+  <img src="readme-images/CinevilleMissendeAfbeeling.jpeg" width="375px" alt="Deze afbeelding wou ook niet laden">
  
 </details>
 
@@ -60,6 +64,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - Belemmerd in beweging, kleine knopjes zijn lastig aan te klikken.
+  - Maakt het navigeren van de website lastig
+
+  - Wanneer de films veranderen op de Home pagina hoor je helemaal niks over wat voor film het is of dat de slider naar de volgende film gaat. Je krijgt alleen maar te horen dat je op de pagina van de movies zit. verder helemaal niks over de films zelf 
+
+  - Geen narrator voor de navigatie, dus je hebt geen idee waar je bent en wat je op de website kan doen.
+  - De filmposterds hebben wel een link die voorgelezen wordt, maar de trailers zitten in een groep waar door je niet hoort welke trailer je aan het kijken bent.
+  - De tijden dat de film draait wordt heel random opgenoemd
+  - De links bij het zoekbalkje en dan aanbevelingen worden niet verder aangegeven dan het woord 'link'
+
+- De tekst op de pagina van Cineville wordt helemaal niet voorgelezen. 
+
+  - Niet alles wast je op de mobiele versie kan doen kan je op de web versie doen. (caroussel werk niet op web, en hover werkt niet op mobiel)
+  - De knop van Tickets & tijden verdwijnt soms?
 
 </details>
 
