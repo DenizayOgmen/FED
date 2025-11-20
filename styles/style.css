@@ -17,15 +17,69 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--color-highlight:#af1b0b;
 }
 
+/* 
+===================
+MEDIA QUERIES （彡໒(⊙ᴗ⊙)७彡）
+=================== 
+*/
 
 
 
+/* 
+===================
+GENERAL （彡໒(⊙ᴗ⊙)७彡）
+=================== 
+*/
 
-/****************/
-/* JOUW STYLING */
-/****************/
+.logo {
+    width: 40%;
+    cursor: pointer;
+}
 
-/* jouw code */
+/* 
+===================
+NAVIGATION （彡໒(⊙ᴗ⊙)७彡）
+=================== 
+*/
+
+/*
+nav {
+    position: relative;
+    width: 100%;
+    top: -23px;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+	*/
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    display: flex;
+    margin-left: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 8px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(254, 248, 230);
+    font-size: 17px;
+    font-family: ringbearer;
+}
+
+nav ul li a:hover{
+    color: var(--color-highlight);
+}
 
