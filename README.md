@@ -44,14 +44,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home/landingspagina 
-  <img src="readme-images/Home.jpeg" width="375px" alt="de home pagina van the movies">
-  <img src="readme-images/HomeMissendeAfbeelding.jpeg" width="375px" alt="De afbeelding bovenaan de website wou de screenshot niet meenemen">
-  <img src="readme-images/HomeEnCinevilleMissendeAfbeelding.jpeg" width="375px" alt="Hetzelfde geldt voor de afbeeldingen in de caroussen onderaan">
+  <img src="readme-images/screenshotTheMovies.png" width="375px" alt="de home pagina van the movies">
+  width="375px" alt="Hetzelfde geldt voor de afbeeldingen in de caroussen onderaan">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/Cineville.jpeg" width="375px" alt="onbeperkt naar de film, Cinevill pase">
-  <img src="readme-images/CinevilleMissendeAfbeeling.jpeg" width="375px" alt="Deze afbeelding wou ook niet laden">
+  <img src="readme-images/screenshotOnbeperktNaarDeFilm.png" width="375px" alt="onbeperkt naar de film, Cinevill pase">
  
 </details>
 
@@ -89,7 +87,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/BreakdownSchetsHome-1.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
