@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" aria-label="Menu" viewBox="0 0 100 100">
+							<path class="menu-icon__line" d="M20 29h73v64L25 25"></path>
+							<path class="menu-icon__line" d="M20 50h60"></path>
+							<path class="menu-icon__line" d="M20 71h73V7L25 75"></path>
+						</svg>
