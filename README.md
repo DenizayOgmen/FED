@@ -93,7 +93,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/BreakdownschetsFilter.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -109,6 +109,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Ik was begonnen voordat ik de schets had gemaakt maar had daar best wel veel moeite mee. Pas nadat ik voormezelf een duidelijke opstelling had gemaakt begon het kwartje te vallen.
+  
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -123,10 +125,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik ben nog niet heel erg ver, maar de schets ziet er wel goed uit
+  - Html is ook wel netjes alleen nog verder aanvullen maar de basisi opstelling is er
 
 </details>
 

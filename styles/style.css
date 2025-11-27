@@ -13,11 +13,22 @@
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
+@font-face {
+  font-family: 'EarlyEditionJNL';
+  src: url('../fonts/EarlyEditionJNL.woff2') format('woff2'),
+       url('../fonts/EarlyEditionJNL.woff') format('woff');
+}
+
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+    --color-basicwhite:#ffffff;
+	--color-background:#dddcd7;
+    --color-moviecard:#e9e8e1;
 	--color-highlight:#af1b0b;
+
+    --font-header: 'EarlyEditionJNL';
 }
 
 /* 
@@ -45,19 +56,6 @@ NAVIGATION （彡໒(⊙ᴗ⊙)७彡）
 =================== 
 */
 
-/*
-nav {
-    position: relative;
-    width: 100%;
-    top: -23px;
-    left: 0;
-    padding: 20px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-	*/
-
 nav ul {
 	display: flex;
 }
@@ -66,20 +64,146 @@ nav ul li {
     list-style: none;
     display: flex;
     margin-left: 40px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 10px 8px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: rgb(254, 248, 230);
-    font-size: 17px;
-    font-family: ringbearer;
+/* 
+===================
+Body （彡໒(⊙ᴗ⊙)७彡）
+=================== 
+*/
+
+body{
+    font-family: "Roboto", sans-serif, Arial, Helvetica;
+    background-color: var(--color-background);
 }
 
-nav ul li a:hover{
+h2{
+    font-family: var(--font-header);
+    font-size: 2em;
+    text-transform: uppercase;
     color: var(--color-highlight);
 }
 
+h3{
+    text-transform: uppercase;
+}
+
+/* 
+===================
+Button（彡໒(⊙ᴗ⊙)७彡）
+=================== 
+*/
+
+.FilterButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-basicwhite);
+    
+    cursor: pointer;
+
+}
+/* 
+===================
+FILMS （彡໒(⊙ᴗ⊙)७彡）
+=================== 
+*/
+
+.Films ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;        /* ruimte tussen kaarten */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.Films li{
+    display: grid;
+    grid-template-columns: 11.25em 1fr; 
+    column-gap: 1.5em;
+    background-color: var(--color-moviecard);
+    border-radius: 0.75em;  
+    padding: 1.5em 1.5em 1.75em;
+    width: 100%;
+    max-width: 40em; 
+}
+
+.Films li > img:first-child {
+    display: block;
+    width: 100%;
+    border-radius: 0.75em;
+    object-fit: cover;
+    grid-column: 1;
+    grid-row: 1 / span 4; 
+}
+
+.Films .Pictogrammen {
+    display: flex;
+    grid-column: 2;
+    list-style: none;
+    align-items: start;
+    justify-content: space-between;
+    margin: 0.75em 0 0;
+    padding: 0;
+    
+}
+
+.Films .Pictogrammen img{
+    max-width: 2em;
+    height: auto;
+
+}
+
+.Films .Times {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 
+===================
+SPECIALS （彡໒(⊙ᴗ⊙)७彡）
+=================== 
+*/
+
+.Specials ul{
+    display: flex; /* Flex want alles staat onder elkaar van boven naar beneden */
+    justify-content: center;
+    padding: 0; /* ruimte tussen */
+    margin: 0;
+    gap: 2em;
+    list-style: none;
+    flex-wrap: wrap; /* Die zorgt ervoor dat de items in de specials op een nieuwe rij mogen springen als ze niet meer naast elkaar passen */
+
+}
+
+.Specials li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-color:var(--color-moviecard);
+    border-radius: 0.75em; /*Maakt de hoeken rond  */
+    padding: 1.5em 1.5em 1.75em;
+    width: 100%;
+    max-width: 26.25em;
+}
+
+.Specials span{
+    font-family: var();
+    text-transform: uppercase;
+}
+
+.Specials li > img:first-child{  /*  met > pakt ie alleen het plaatje dat irect in de moeder ligt. zonder Selecteer je alle plaatjes in een li */
+    width: 100%;
+    display: block;
+    border-radius: 0.5em;
+    margin-bottom: 1.25em;
+    object-fit: cover;
+}
+
+.RedArrow{
+    align-self: flex-end;   /* schuift naar rechts onder */
+    width: 1.75em;                  
+    height: auto;
+}
