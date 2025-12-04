@@ -1,8 +1,12 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -15,18 +19,20 @@
 /*********************/
 
 @font-face {
-  font-family: 'EarlyEditionJNL';
-  src: url('../fonts/EarlyEditionJNL.woff2') format('woff2'),
-       url('../fonts/EarlyEditionJNL.woff') format('woff');
+    font-family: 'EarlyEditionJNL';
+    src: url('../fonts/EarlyEditionJNL.woff2') format('woff2'),
+        url('../fonts/EarlyEditionJNL.woff') format('woff');
 }
 
 :root {
-	/* startje */
-	--color-text:#111;
-    --color-basicwhite:#ffffff;
-	--color-background:#dddcd7;
-    --color-moviecard:#e9e8e1;
-	--color-highlight:#af1b0b;
+    /* startje */
+    --color-basicwhite: #ffffff;
+    --color-basicblack: #000000;
+    --color-background: #dddcd7;
+    --color-moviecard: #e9e8e1;
+    --color-highlight: #af1b0b;
+    --color-timeslot: #dddcd7;
+    --color-overlay: #2f3631;
 
     --font-header: 'EarlyEditionJNL';
 }
@@ -50,6 +56,10 @@ GENERAL （彡໒(⊙ᴗ⊙)७彡）
     cursor: pointer;
 }
 
+img {
+    width: 100%;
+}
+
 /* 
 ===================
 NAVIGATION （彡໒(⊙ᴗ⊙)७彡）
@@ -57,7 +67,7 @@ NAVIGATION （彡໒(⊙ᴗ⊙)७彡）
 */
 
 nav ul {
-	display: flex;
+    display: flex;
 }
 
 nav ul li {
@@ -72,20 +82,32 @@ Body （彡໒(⊙ᴗ⊙)७彡）
 =================== 
 */
 
-body{
+body {
     font-family: "Roboto", sans-serif, Arial, Helvetica;
     background-color: var(--color-background);
 }
 
-h2{
+h2 {
     font-family: var(--font-header);
     font-size: 2em;
     text-transform: uppercase;
     color: var(--color-highlight);
 }
 
-h3{
+h3 {
     text-transform: uppercase;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
 }
 
 /* 
@@ -94,26 +116,56 @@ Button（彡໒(⊙ᴗ⊙)७彡）
 =================== 
 */
 
-.FilterButton{
+.FilterButton {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: var(--color-basicwhite);
-    
+
     cursor: pointer;
 
 }
+
 /* 
 ===================
 FILMS （彡໒(⊙ᴗ⊙)७彡）
 =================== 
 */
 
-.Films ul{
-    display: flex;
+/* .Films > ul > li{
+    display: grid;
+    border: solid 1rem red;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.Films ul li ul {
+    border: solid 1rem blue;
+}
+
+.Films li > img:first-child {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    object-fit: cover;
+}
+
+.Films > ul > li > ul:nth-of-type(2) {
+    border: solid 1rem green;
+}
+
+.Films h3{
+    display: grid;
+    font-family: var(--font-header);
+    font-size: 2em;
+    text-transform: uppercase;
+    color: var(--color-highlight);
+} */
+
+
+/* .Films ul{
+    display: grid;
     flex-wrap: wrap;
     gap: 2em;        /* ruimte tussen kaarten */
-    padding: 0;
+/* padding: 0;
     margin: 0;
     list-style: none;
 }
@@ -127,17 +179,17 @@ FILMS （彡໒(⊙ᴗ⊙)७彡）
     padding: 1.5em 1.5em 1.75em;
     width: 100%;
     max-width: 40em; 
-}
+} */
 
-.Films li > img:first-child {
+/* .Films li > img:first-child {
     display: block;
     width: 100%;
     border-radius: 0.75em;
     object-fit: cover;
     grid-column: 1;
     grid-row: 1 / span 4; 
-}
-
+} */
+/* 
 .Films .Pictogrammen {
     display: flex;
     grid-column: 2;
@@ -158,7 +210,77 @@ FILMS （彡໒(⊙ᴗ⊙)७彡）
 .Films .Times {
   display: flex;
   justify-content: flex-end;
+} */
+
+.Films>ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
+
+.Films>ul>li.grow {
+    scale: 1.1;
+    box-shadow: gold 0 0 20px;
+}
+
+.Films>ul>li {
+    max-width: 30rem;
+    background-color: var(--color-moviecard);
+    filter: drop-shadow(rgba(0, 0, 0, .2)0 0 5px);
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+
+.Films>ul>li>ul:nth-of-type(2) {
+    justify-content: end;
+    gap: 1rem;
+    background-color: var(--color-timeslot);
+    padding: .8rem;
+}
+
+
+.Films>ul>li>ul:nth-of-type(2) li {
+    padding: .5rem;
+    border-radius: .4rem;
+    border: solid .2rem red;
+    background-color: white;
+}
+
+.Films>ul>li>ul {
+    display: flex;
+}
+
+/* POSTER */
+.Films>ul>li>ul:nth-of-type(1)>li>img {
+    width: 3rem;
+}
+
+.Films>ul>li>ul>li:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Beschrijving sectie */
+.Films>ul>li>ul:nth-of-type(1)>li:nth-of-type(2)>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    height: 100%;
+}
+
+.Films>ul>li>ul:nth-of-type(1)>li:nth-of-type(2)>ul>ul {
+    display: flex;
+    margin-top: auto;
+}
+
+/* KIJKWIJZER PICTOGRAMMEN */
+.Films>ul>li>ul:nth-of-type(1)>li:nth-of-type(2)>ul>ul li {
+    width: 2rem;
+
+}
+
 
 /* 
 ===================
@@ -166,35 +288,40 @@ SPECIALS （彡໒(⊙ᴗ⊙)७彡）
 =================== 
 */
 
-.Specials ul{
-    display: flex; /* Flex want alles staat onder elkaar van boven naar beneden */
-    justify-content: center;
-    padding: 0; /* ruimte tussen */
+.Specials ul {
+    display: flex;
+    /* Flex want alles staat onder elkaar van boven naar beneden */
+    /* justify-content: center; */
+    padding: 0;
+    /* ruimte tussen */
     margin: 0;
     gap: 2em;
     list-style: none;
-    flex-wrap: wrap; /* Die zorgt ervoor dat de items in de specials op een nieuwe rij mogen springen als ze niet meer naast elkaar passen */
+    flex-wrap: wrap;
+    /* Die zorgt ervoor dat de items in de specials op een nieuwe rij mogen springen als ze niet meer naast elkaar passen */
 
 }
 
-.Specials li{
+.Specials li {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
-    background-color:var(--color-moviecard);
-    border-radius: 0.75em; /*Maakt de hoeken rond  */
+    background-color: var(--color-moviecard);
+    border-radius: 0.75em;
+    /*Maakt de hoeken rond  */
     padding: 1.5em 1.5em 1.75em;
     width: 100%;
     max-width: 26.25em;
 }
 
-.Specials span{
+.Specials span {
     font-family: var();
     text-transform: uppercase;
 }
 
-.Specials li > img:first-child{  /*  met > pakt ie alleen het plaatje dat irect in de moeder ligt. zonder Selecteer je alle plaatjes in een li */
+.Specials li>img:first-child {
+    /*  met > pakt ie alleen het plaatje dat irect in de moeder ligt. zonder Selecteer je alle plaatjes in een li */
     width: 100%;
     display: block;
     border-radius: 0.5em;
@@ -202,8 +329,95 @@ SPECIALS （彡໒(⊙ᴗ⊙)७彡）
     object-fit: cover;
 }
 
-.RedArrow{
-    align-self: flex-end;   /* schuift naar rechts onder */
-    width: 1.75em;                  
+.RedArrow {
+    align-self: flex-end;
+    /* schuift naar rechts onder */
+    width: 1.75em;
     height: auto;
+}
+
+/* 
+===================
+ERVAAR （彡໒(⊙ᴗ⊙)७彡）
+=================== 
+*/
+
+.Ervaar {
+    padding: 4rem;
+    background-color: var(--color-basicblack);
+   
+}
+
+.Ervaar ul {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1.5rem;
+}
+
+.Ervaar ul li {
+    min-width: 22rem;
+    position: relative;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+.Ervaar ul li::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .5);
+    position: absolute;
+
+}
+
+.Ervaar ul li {
+    position: relative;
+}
+
+.Ervaar ul li h2 {
+    position: absolute;
+    bottom: 2rem;
+    color: white;
+    left: 2rem;
+    z-index: 2;
+}
+
+/* 
+===================
+NIEUWSBRIEF 彡໒(⊙ᴗ⊙)७彡）
+=================== 
+*/
+
+.Nieuwsbrief {  
+  background-image: url(../images/Extra/MovieCurtain.png);
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+}
+
+.Nieuwsbrief h2 {
+  color: var(--color-basicwhite);
+  font-size: 1.8em;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 1.5em;
+  padding: 2rem;
+  text-transform: uppercase;
+
+}
+
+/* 
+===================
+FOOTER 彡໒(⊙ᴗ⊙)७彡）
+=================== 
+*/
+
+footer {
+    background-image: url(../images/Extra/Kaart.jpeg);
+}
+
+footer p{
+    color: var(--color-basicwhite);
+    text-align: center;
 }
