@@ -142,6 +142,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Het gaat redelijk de goeie kant op met de html. Ik vind alleen het stijlen wat lastig, maar daar ben ik ook wat dingen aan het proberen. 
+
+  Nu loop ik alleen vast bij de 'filmkaarten' ik kom er niet uit met de grid
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -156,9 +160,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - h1 toevoegen eventueel aan het logo
+  - maak gebruik van grid
+  - direct decended selector .film>ul>li
+  - Even kijken komt waarschijnlijk door de pictogrammen, maar nu past het nog niet komt waarschijnlijk door de grid
+  - bij de sectie films voor de titel h3 gebruiken. In dit geval zijn Nu, Specials en verwacht de h2
 - ...
 
 </details>
