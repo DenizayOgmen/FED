@@ -193,7 +193,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik Loop een beetje vast met de stijling voor films. hoe ik die li'tjes preciesn aan moet pakken.
 
 
   ### Agenda voor meeting
@@ -209,10 +209,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik mag divjes gebruiken voor de styling in "Films"
+  - Goed kijken naar de breakdown van de stukjes in de website
+  - Verder met het uitwerken van de nav
+  - Verder met styling
 
 </details>
 
@@ -254,8 +254,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
+  1. Chatgpt
+  2. Studiegenoten
   3. ...
 
 </details>

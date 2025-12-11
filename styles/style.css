@@ -112,6 +112,41 @@ img {
 
 /* 
 ===================
+HERO（彡໒(⊙ᴗ⊙)७彡）
+=================== 
+*/
+
+.hero {
+    padding: 4rem;
+   
+}
+
+.hero ul {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+}
+
+.hero ul li {
+    min-width: 45rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero ul li::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.hero ul li {
+    position: relative;
+}
+
+/* 
+===================
 Button（彡໒(⊙ᴗ⊙)७彡）
 =================== 
 */
@@ -125,92 +160,6 @@ Button（彡໒(⊙ᴗ⊙)७彡）
     cursor: pointer;
 
 }
-
-/* 
-===================
-FILMS （彡໒(⊙ᴗ⊙)७彡）
-=================== 
-*/
-
-/* .Films > ul > li{
-    display: grid;
-    border: solid 1rem red;
-    grid-template-columns: repeat(10, 1fr);
-}
-
-.Films ul li ul {
-    border: solid 1rem blue;
-}
-
-.Films li > img:first-child {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    object-fit: cover;
-}
-
-.Films > ul > li > ul:nth-of-type(2) {
-    border: solid 1rem green;
-}
-
-.Films h3{
-    display: grid;
-    font-family: var(--font-header);
-    font-size: 2em;
-    text-transform: uppercase;
-    color: var(--color-highlight);
-} */
-
-
-/* .Films ul{
-    display: grid;
-    flex-wrap: wrap;
-    gap: 2em;        /* ruimte tussen kaarten */
-/* padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.Films li{
-    display: grid;
-    grid-template-columns: 11.25em 1fr; 
-    column-gap: 1.5em;
-    background-color: var(--color-moviecard);
-    border-radius: 0.75em;  
-    padding: 1.5em 1.5em 1.75em;
-    width: 100%;
-    max-width: 40em; 
-} */
-
-/* .Films li > img:first-child {
-    display: block;
-    width: 100%;
-    border-radius: 0.75em;
-    object-fit: cover;
-    grid-column: 1;
-    grid-row: 1 / span 4; 
-} */
-/* 
-.Films .Pictogrammen {
-    display: flex;
-    grid-column: 2;
-    list-style: none;
-    align-items: start;
-    justify-content: space-between;
-    margin: 0.75em 0 0;
-    padding: 0;
-    
-}
-
-.Films .Pictogrammen img{
-    max-width: 2em;
-    height: auto;
-
-}
-
-.Films .Times {
-  display: flex;
-  justify-content: flex-end;
-} */
 
 .Films>ul {
     display: flex;
@@ -231,7 +180,6 @@ FILMS （彡໒(⊙ᴗ⊙)७彡）
 
 }
 
-
 .Films>ul>li>ul:nth-of-type(2) {
     justify-content: end;
     gap: 1rem;
@@ -239,11 +187,10 @@ FILMS （彡໒(⊙ᴗ⊙)७彡）
     padding: .8rem;
 }
 
-
 .Films>ul>li>ul:nth-of-type(2) li {
     padding: .5rem;
     border-radius: .4rem;
-    border: solid .2rem red;
+    border: solid .2rem var(--color-highlight);
     background-color: white;
 }
 
@@ -414,10 +361,71 @@ FOOTER 彡໒(⊙ᴗ⊙)७彡）
 */
 
 footer {
-    background-image: url(../images/Extra/Kaart.jpeg);
+    background-image: url("../images/Extra/Kaart.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    position: relative;
+    text-align: center;
+    color: var(--color-basicwhite);
+    
 }
 
-footer p{
+footer section {
+    position: relative;
+    /* Zorgt ervoor dat de content over de achtergrondafbeelding te zien is */
+    z-index: 1;
+}
+
+/* Logo */
+footer img {
+    max-width: 11rem;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+footer a {
     color: var(--color-basicwhite);
-    text-align: center;
+    text-decoration: none;
+}
+
+.RouteButton {
+    padding: 1rem 2rem;               
+    margin: 1.5em auto;
+
+    background: var(--color-basicwhite);
+    color: var(--color-basicblack);
+
+    border: 0.2rem solid var(--color-highlight);
+    border-radius: 0.5rem;
+
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Social icons container */
+.socials {
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.socials img {
+    width: 1.75rem;
+    height: 1.75rem;
+    /* Aan chatgpt gevraagd hoe ik de kleur van mijn svg kon veranderen */
+    filter: invert(1); 
+}
+
+/* Credits */
+.credits {
+    display: flex;
+    justify-content: left;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    
 }
