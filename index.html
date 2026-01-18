@@ -13,57 +13,104 @@
     <link rel="icon" type="image/svg+xml" href="images/Logo/050_favicon-16x16.png">
 </head>
 
-<body class="hero">
-
+<body>
     <header>
         <nav>
-            <a href="index.html"><img src="images/Logo/056_apple-launch-1668x2224.jpg.jpeg" alt="The Movies logo"
-                    class="logo"></a>
+            <a class="nav__logo" href="index.html"><img src="images/Logo/TheMoviesTransparent.png" alt=""></a>
 
-            <ul>
+            <ul class="nav__list">
                 <li>
-                    <a href="">Informatie>
+                    <a href="">Informatie</a>
                 </li>
                 <li>
                     <a href="">Nieuws</a>
                 </li>
                 <li>
-                    <a href="Agenda"></a>
+                    <a href="Agenda">Agenda</a>
                 </li>
                 <li>
                     <a href="">Ex+ra</a>
                 </li>
-                <li>
-                    <a href="">Onbeperkt naar de film</a>
-                </li>
-                <li>
-                    <a href="Bestel ons boek"></a>
-                </li>
-             
             </ul>
+
+            <div class="nav__actions">
+                <div class="nav__search-input">
+                    <input>
+                    <button>
+                        <img src="images/Icons/search.svg">
+                    </button>
+                </div>
+
+                <button class="nav__actions__item">
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 26 23"
+                        aria-hidden="true" class="svg-inline" focusable="false">
+                        <title>Help</title>
+                        <path
+                            d="M13.03 0c7.16 0 12.95 4.773 12.95 10.563 0 5.84-5.79 10.562-12.95 10.562-1.676 0-3.3-.254-4.722-.71-1.524 1.066-3.961 2.335-7.06 2.335-.507 0-.964-.254-1.167-.71-.152-.458-.102-.966.254-1.321.05 0 1.625-1.727 2.336-3.707C.995 15.234.03 13 .03 10.562.03 4.774 5.818 0 13.03 0Zm0 18.688c5.79 0 10.563-3.606 10.563-8.125 0-4.47-4.774-8.126-10.563-8.126-5.84 0-10.562 3.657-10.562 8.126 0 2.183 1.066 3.808 1.98 4.773l1.067 1.117-.559 1.422a9.495 9.495 0 0 1-1.016 2.031 11.33 11.33 0 0 0 2.946-1.472l.965-.711 1.167.355c1.27.406 2.641.61 4.012.61Z">
+                        </path>
+                    </svg>
+                </button>
+
+                <button class="nav__actions__item">
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24"
+                        aria-hidden="true" class="svg-inline" focusable="false">
+                        <title>account</title>
+                        <path
+                            d="M15.28,12.47a6.67,6.67,0,1,0-6.56,0A12,12,0,0,0,0,24H2.67a9.33,9.33,0,0,1,18.66,0H24A12,12,0,0,0,15.28,12.47ZM12,2.67a4,4,0,1,1-4,4A4,4,0,0,1,12,2.67Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main>
+        <section class="slideshow">
+            <!-- <h1>Back to the future 😎</h1> -->
+            <div class="slideshow__list">
+                <div class="slideshow__list__item">
+                    <div class="slideshow__list__item__bar"></div>
+                    <h2>Back to the future</h2>
+                </div>
+
+                <div class="slideshow__list__item">
+                    <div class="slideshow__list__item__bar"></div>
+                    <h2>Back to the future</h2>
+                </div>
+
+                <div class="slideshow__list__item">
+                    <div class="slideshow__list__item__bar"></div>
+                    <h2>Back to the future</h2>
+                </div>
+
+                <div class="slideshow__list__item">
+                    <div class="slideshow__list__item__bar"></div>
+                    <h2>Back to the future</h2>
+                </div>
+            </div>
+
+
+            <img class="slideshow__bg-image" src="images/FIlmPosters/BackToTheFutureVideoIMG.jpeg">
+        </section>
 
         <section class="Hero">
 
             <ul>
-                <li>
-                    <h2>It was just an accident</h2>
+                <li class="slide-active">
                     <img src="images/FIlmPosters/LargeStillItWasJustAnAccident.jpeg" alt="">
+                    <h2>It was just an accident</h2>
                 </li>
-                <li>
-                    <h2>Back to the future</h2>
+                <li class="slide">
                     <img src="images/FIlmPosters/LargeStillBackToTheFuture.jpeg" alt="">
+                    <h2>Back to the future</h2>
                 </li>
-                <li>
-                    <h2>Springsteen</h2>
+                <li class="slide">
                     <img src="images/FIlmPosters/LargeStillSpringsteen.jpeg" alt="">
+                    <h2>Springsteen</h2>
                 </li>
             </ul>
 
-            <button>
+            <button class="TicketButton">
                 <h2>Tickets en tijden</h2>
             </button>
 
@@ -80,8 +127,6 @@
             <spanc class="rechts"> Filteren</spanc>
 
         </button>
-
-
 
         <section class="Films">
             <ul>
@@ -182,50 +227,45 @@
             <ul>
                 <li>
                     <h2>Onbeperkt naar de film</h2>
-                <img src="images/Extra/Cineville.jpeg" alt="">
-            </li>
-            <li>
-                <h2>Cadeaubon</h2>
-                <img src="images/Extra/Cadeaubon.jpeg" alt="">
-            </li>
-            <li>
-                <h2>Eten en drinken</h2>
-                <img src="images/Extra/EtenEnDrinken.jpeg" alt="">
-            </li>
-            <li>
-                <h2>Meer dan 110 jaar the movies</h2>
-                <img src="images/Extra/DeBios.jpeg" alt="">
-            </li>
-        </ul>
-    </section>
-          
-    <section class="Nieuwsbrief">
+                    <img src="images/Extra/Cineville.jpeg" alt="">
+                </li>
+                <li>
+                    <h2>Cadeaubon</h2>
+                    <img src="images/Extra/Cadeaubon.jpeg" alt="">
+                </li>
+                <li>
+                    <h2>Eten en drinken</h2>
+                    <img src="images/Extra/EtenEnDrinken.jpeg" alt="">
+                </li>
+                <li>
+                    <h2>Meer dan 110 jaar the movies</h2>
+                    <img src="images/Extra/DeBios.jpeg" alt="">
+                </li>
+            </ul>
+        </section>
 
-        <h2>De laatste films & specials direct in je mailbox?</h2>
+        <section class="Nieuwsbrief">
 
-        <form action="Form">
-            <label for="email"></label>
-            <input 
-            id="email"
-            type="email"
-            placeholder="type hier jouw e-mailadres"
-            required
-            >
+            <h2>De laatste films & specials direct in je mailbox?</h2>
 
-            <button type="submit">ja, graag</button>
-        </form>
+            <form action="Form">
+                <label for="email"></label>
+                <input id="email" type="email" placeholder="type hier jouw e-mailadres" required>
 
-        <p>
-            Stuur mij wekelijks filmtips en aanbiedingen gebaseerd op mijn interesses.
-            Ik ga akkoord met de <a href="#">privacy policy</a> van The Movies.
-        </p>
+                <button type="submit">ja, graag</button>
+            </form>
 
-    </section>
-        
-        
+            <p>
+                Stuur mij wekelijks filmtips en aanbiedingen gebaseerd op mijn interesses.
+                Ik ga akkoord met de <a href="#">privacy policy</a> van The Movies.
+            </p>
+
+        </section>
+
+
     </main>
-    
-    <footer>
+
+    <footer style="display: none">
         <section>
 
             <img src="images/Logo/TheMoviesTransparent.png" alt="">
@@ -243,17 +283,17 @@
             <section class="socials">
                 <a href=""><img src="images/Icons/Facebook.svg" alt=""></a>
                 <a href=""><img src="images/Icons/Instagram.svg" alt=""></a>
-        
+
             </section>
 
             <p class="credits">Code & Design by Eagerly</p>
 
         </section>
     </footer>
-    
-    
-    
-    
+
+
+
+
     <script defer src="scripts/script.js"></script>
 </body>
 

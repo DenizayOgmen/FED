@@ -16,3 +16,17 @@ function klikFilm(item){
 }
 
 klikFilm(film);
+
+// MAAK DAT DE HEADER WIT WORDT EN OP DE TOP BLIJFT PLAKKEN
+
+const header = document.querySelector('header');
+
+document.addEventListener('scroll', () => {
+    lastKnownScrollPosition = window.scrollY;
+    console.log(lastKnownScrollPosition)
+    if (window.scrollY > 600) {
+        header.classList.add('sticky')
+    } else {
+        header.classList.remove('sticky')
+    }
+});
